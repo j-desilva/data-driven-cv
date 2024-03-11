@@ -51,7 +51,7 @@ Aside
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _j-desilva.me/cv/_")
+  cat("")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/j-desilva/cv/raw/master/desilva_cv.pdf)")
 }
@@ -66,14 +66,15 @@ CV %>% print_contact_info()
 
 
 
-Language Skills {#skills}
+Strengths {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %>% print_skill_bars()
 ```
 
-
+References:  
+Jenny Noiles - Head of Education Exos.
 
 <!-- Disclaimer {#disclaimer} -->
 <!-- -------------------------------------------------------------------------------- -->
@@ -98,6 +99,13 @@ CV %<>% print_text_block("intro")
 ```
 
 
+Relevant Experience {data-icon=football data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('industry_positions')
+```
+
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -117,23 +125,23 @@ CV %<>% print_section('education')
 
 
 
-Industry Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
+<!-- Professional Experience {data-icon=football-helmet} -->
+<!-- ---------------------------------------------------------------------- -->
 
-::: aside
-```{r}
-CV %<>% print_text_block('industy_experience_aside')
-```
-:::
+<!-- ::: aside -->
+<!-- ```{r} -->
+<!-- CV %<>% print_text_block('industy_experience_aside') -->
+<!-- ``` -->
+<!-- ::: -->
 
-```{r}
-CV %<>% print_section('industry_positions')
-```
+<!-- ```{r} -->
+<!-- CV %<>% print_section('industry_positions') -->
+<!-- ``` -->
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
 
 <!-- Teaching Experience {data-icon=chalkboard-teacher} -->
 <!-- -------------------------------------------------------------------------------- -->
@@ -195,7 +203,7 @@ CV %<>% print_section('industry_positions')
 
 
 
-```{r}
-CV %<>% print_links()
-```
+<!-- ```{r} -->
+<!-- CV %<>% print_links() -->
+<!-- ``` -->
 
