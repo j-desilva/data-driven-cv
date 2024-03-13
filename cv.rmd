@@ -46,7 +46,7 @@ Aside
 ================================================================================
 
 <!-- Swap image with your preferred logo -->
-![logo](https://cran.r-project.org/Rlogo.svg){width=100%}
+![](headshot.png)
 
 
 ```{r}
@@ -66,15 +66,13 @@ CV %>% print_contact_info()
 
 
 
-Strengths {#skills}
+References {#visualization}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %>% print_skill_bars()
+CV %<>% print_text_block('references')
 ```
 
-References:  
-Jenny Noiles - Head of Education Exos.
 
 <!-- Disclaimer {#disclaimer} -->
 <!-- -------------------------------------------------------------------------------- -->
