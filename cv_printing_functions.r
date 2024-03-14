@@ -15,7 +15,7 @@
 #'   is the sheet publicly available? (Makes authorization easier.)
 #' @return A new `CV_Printer` object.
 create_CV_object <-  function(data_location,
-                              pdf_mode = TRUE,
+                              pdf_mode = FALSE,
                               sheet_is_publicly_readable = TRUE) {
 
   cv <- list(
